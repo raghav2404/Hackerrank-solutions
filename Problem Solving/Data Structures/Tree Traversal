@@ -1,0 +1,42 @@
+PREORDER TRAVERSAL CODE
+
+void preOrder( struct node *root) {
+    if(root!=NULL)
+    {
+printf("%d ",(*root).data);
+
+preOrder((*root).left);
+preOrder((*root).right);
+    }
+    else
+    return;
+    }
+    
+    
+ INORDER TRAVERSAL CODE
+ 
+ void inOrder( struct node *root) {
+    if(root!=NULL)
+    {
+inOrder((*root).left);
+printf("%d ",(*root).data);
+inOrder((*root).right);
+    }
+    else
+    return ;
+    }
+
+
+POSTORDER TRAVERSAL CODE
+
+void postOrder( struct node *root) {
+    if(root!=NULL)
+    {
+postOrder((*root).left);
+postOrder((*root).right);
+printf("%d ",(*root).data);
+    }
+    else
+    return;
+}
+    
