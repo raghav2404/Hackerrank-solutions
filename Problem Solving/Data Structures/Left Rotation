@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+int arr[100000];
+int n,d,i,k,j,m;
+scanf("%d %d\n",&n,&d);
+for(i=0;i<n;i++)
+scanf("%d",&arr[i]);
+
+for(i=1;i<=d;i++){
+m=arr[0];
+
+for(k=1;k<n;k++)
+{
+arr[k-1]=arr[k];
+}
+if(k==n)
+arr[n-1]=m;
+}
+for(i=0;i<n;i++)
+printf("%d ",arr[i]);
+
+
+    return 0;
+
+}
