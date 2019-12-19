@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+String a=new String();
+String b=new String();
+
+a=sc.nextLine();
+b=sc.nextLine();
+BigInteger A,B;
+A=new BigInteger(a);
+B=new BigInteger(b);
+
+
+System.out.println(A.add(B));
+System.out.println(A.multiply(B));
+    }
+}
+
